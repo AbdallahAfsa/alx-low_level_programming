@@ -4,17 +4,17 @@
  * description: A C program that prints the size of various types
  * Return: Always return 0
  */
- int main(void)
+int main(void)
 {
-	char a;
-	int b;
-	long int c;
-	long long int d;
-	float f;
-	printf("Size of a char: %c 1 byte(s)\n", a);
-	printf("Size of a char: %d 1 byte(s)\n", b);
-	printf("Size of a char: %lu 1 byte(s)\n", c);
-	printf("Size of a char: %lu 1 byte(s)\n", d);
-	printf("Size of a char: %f 1 byte(s)\n", f);
-	return (0);
+char a;
+int b;
+long int c;
+long long int d;
+float f;
+printf("Size of a char: %lu byte(s)\n", (unsigned long)sizeof(a));
+printf("Size of an int: %lu byte(s)", (unsigned long)sizeof(b));
+printf("Size of a long int: %lu byte(s)", (unsigned long)sizeof(c));
+printf("Size of a long long int: %lu byte(s)", (unsigned long)sizeof(d));
+printf("Size of a float: %lu byte(s)", (unsigned long)sizeof(f));
+return (0);
 }
