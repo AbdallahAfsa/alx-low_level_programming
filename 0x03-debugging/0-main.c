@@ -1,8 +1,7 @@
 #include "main.h"
 
 /**
- * main - entry point
- * description: test func that print if int is + or, -
+ * main - a test func that print if int is + or, -
  * Return: 0
  */
 
